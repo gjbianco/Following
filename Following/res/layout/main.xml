@@ -16,5 +16,10 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:text="" />
+	    
+	 <MapView
+	 	android:id="@+id/MapView1"
+	 	android:layout_width="wrap_content"
+	 	android:layout_height="wrap_content" />
 </LinearLayout>
 
