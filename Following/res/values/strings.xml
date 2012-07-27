@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MainActivity</string>
-    <string name="main_default_text">&quot;Please press Start&quot;</string>
+    <string name="app_name">Following</string>
+    <string name="main_default_text">&quot;Button toggles GPS location&quot;</string>
 </resources>

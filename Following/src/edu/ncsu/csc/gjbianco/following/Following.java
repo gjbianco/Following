@@ -11,7 +11,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-public class MainActivity extends Activity
+public class Following extends Activity
 {
 	private LocationManager  locationManager;
 	private LocationListener locationListener;
