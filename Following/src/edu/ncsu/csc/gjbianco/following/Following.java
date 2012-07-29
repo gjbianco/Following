@@ -1,6 +1,5 @@
 package edu.ncsu.csc.gjbianco.following;
 
-import android.app.Activity;
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
@@ -10,8 +9,9 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+import com.google.android.maps.*;
 
-public class Following extends Activity
+public class Following extends MapActivity
 {
 	private LocationManager  locationManager;
 	private LocationListener locationListener;
@@ -82,5 +82,11 @@ public class Following extends Activity
 		super.onResume();
 		if(gpsState)
 			locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+	}
+
+	@Override
+	protected boolean isRouteDisplayed() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }
