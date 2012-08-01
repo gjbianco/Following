@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
     <com.google.android.maps.MapView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:enabled="true"
         android:clickable="true"
         android:apiKey="0NqqIcYLJqkVs0sRw9m-6kKIzHWt0Giq9ZVDnnQ" />
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_default_text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 	<ToggleButton
 	    android:id="@+id/toggleButton1"
-	    android:layout_width="wrap_content"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
+	    android:layout_gravity="left"
 	    android:text="" />
+	
 </LinearLayout>
 
